@@ -2,7 +2,7 @@ import KontaktFormCTA from "@/components/KontaktFormCTA";
 import HeroSection from "@/components/Hero";
 import WarumWirSection from "@/components/Why";
 import { IntroTextLeistungen } from "@/components/IntroSection";
-import ServiceSection from "@/components/servicesSection";
+import ServiceSection from "@/components/ServicesSection";
 
 export default function Home() {
   return (
