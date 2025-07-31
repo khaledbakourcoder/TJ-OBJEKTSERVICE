@@ -1,6 +1,5 @@
 // src/components/KontaktFormCTA.tsx
 
-'use client';
 
 import React from 'react';
 import Link from 'next/link';
