@@ -60,7 +60,7 @@ export default function Header() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black bg-opacity-50 z-40"
+            className="fixed inset-0 bg-black/50 bg-opacity-50 z-40"
             onClick={() => setMenuOpen(false)}
           >
             <motion.ul
@@ -68,7 +68,7 @@ export default function Header() {
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
               transition={{ type: 'tween' }}
-              className="absolute right-0 top-0 w-screen h-full bg-[#002B45] p-6 flex flex-col space-y-6 text-lg font-medium"
+              className="absolute right-0 top-0 w-3/4 h-full bg-[#002B45] p-6 flex flex-col space-y-6 text-lg font-medium"
               onClick={(e) => e.stopPropagation()} // verhindert, dass Klick auf Menü es schließt
             >
               {NavLinksData.map((link, i) => (

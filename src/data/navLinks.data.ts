@@ -1,8 +1,8 @@
 const NavLinksData = [
-    {path:"/", label:"Start"},
-    {path:"/about-us", label:"Über uns"},
-    {path:"/service", label:"Leistungen"},
-    {path:"/contact", label:"Kontakt"},
-]
-
+    { path: "/", label: "Start" },
+    { path: "/ueber-uns", label: "Über uns" },
+    { path: "/leistungen", label: "Leistungen" },
+    { path: "/kontakt", label: "Kontakt" },
+  ];
+  
 export default NavLinksData
