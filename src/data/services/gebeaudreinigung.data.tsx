@@ -6,6 +6,11 @@ const GebaeudereinigungData: ServiceDataType = {
   title: 'Gebäudereinigung',
   text: 'Gründliche Reinigung für Treppenhäuser, Büros, Fenster & mehr.',
   bg: 'bg-[#e6f4ff]',
+  button:{
+    bg:"bg-blue-400",
+    text_color:"text-[#e6f4ff]",
+    hover_bg:"hover:bg-blue-400/80"
+  },
   border: 'border-blue-400',
   Image: { path: "gebäudreinigung-image.png", alt: "Gebäudereinigung Bild" },
   path: "gebeaudreinigung",

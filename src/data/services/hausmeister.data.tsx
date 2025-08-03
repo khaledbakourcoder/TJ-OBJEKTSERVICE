@@ -6,6 +6,12 @@ const HausmeisterData: ServiceDataType = {
   title: 'Hausmeisterdienste',
   text: 'Kleine Reparaturen, Objektkontrollen und technischer Service.',
   bg: 'bg-[#fff8e6]',
+  button:{
+    bg:"bg-yellow-400",
+    text_color:"text-[#fff8e6]",
+    hover_bg:"hover:bg-yellow-400/80"
+
+  },
   border: 'border-yellow-400',
   Image: { path: "Hausmeister-image.png", alt: "Hausmeisterservice Bild" },
   path: "hausmeister",

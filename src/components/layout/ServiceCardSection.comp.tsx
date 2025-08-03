@@ -5,14 +5,15 @@ import { CheckCircle } from "lucide-react";
 
 import Link from "next/link";
 import type { ServiceDataType } from "@/types/services.type";
+import Button from "../UI/Button";
 
 type props = {
     data: ServiceDataType[]
-    parentPath:string
+    parentPath: string
 }
 
 
-export default function ServiceCardSection({ data,parentPath }: props) {
+export default function ServiceCardSection({ data, parentPath }: props) {
 
     return <div className="grid md:grid-cols-2 gap-12">
 
@@ -37,15 +38,13 @@ export default function ServiceCardSection({ data,parentPath }: props) {
                             </li>
                         )}
                     </ul>
-
-                    <div className="mt-4 w-full flex justify-start sm:justify-center">
-                        <Link
-                            href={`/${[parentPath, service.path].filter(Boolean).join("/")}`}
-                            className="w-full sm:w-auto px-4 py-2 bg-primary text-white rounded-md transition hover:bg-primary/90 text-center block"
+                    <Button
+                        className={`${service.button.bg} ${service.button.text_color} ${service.button.hover_bg}`}
+                        path={`/${[parentPath, service.path].filter(Boolean).join("/")}`}
                         >
-                            Jetzt mehr erfahren
-                        </Link>
-                    </div>
+                        Jetzt mehr erfahren
+                    </Button>
+                    
                 </div>
             </div>
         )}

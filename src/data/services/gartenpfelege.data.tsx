@@ -6,6 +6,11 @@ const GartenpflegeData: ServiceDataType = {
   title: "Gartenpflege",
   text: "Rasen, Hecken, Wege – gepflegte Außenanlagen vom Fach.",
   bg: "bg-[#f3fbe6]",
+  button:{
+    bg:"bg-green-400",
+    text_color:"text-[#f3fbe6]",
+    hover_bg:"hover:bg-green-400/80"
+  },
   border: "border-green-400",
   Image: { path: "gartenpfelege-image.png", alt: "Gartenpflege Bild" },
   path: "gartenpfelege",

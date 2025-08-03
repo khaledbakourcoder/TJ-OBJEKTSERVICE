@@ -23,6 +23,11 @@ export type ServiceDataType = {
   text: string;
   bg: string;
   border: string;
+  button:{
+    bg:string,
+    text_color:string
+    hover_bg:string
+  },
   Image: {
     path: string;
     alt: string;
