@@ -60,7 +60,7 @@ export default function LeistungenPage() {
                 <div className="text-center">
                     <h1 className="text-4xl font-bold mb-4">Unsere Leistungen</h1>
                 </div>
-                <ServiceCardSection data={ServicesData}/>
+                <ServiceCardSection parentPath="leistungen" data={ServicesData}/>
             </section>
         </main>
     );

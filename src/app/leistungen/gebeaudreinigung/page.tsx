@@ -8,5 +8,5 @@ export const metadata = {
 };
 
 export default function gebeaudreinigung() {
-    return <ServicesDetailTemplate slug="gebeaudreinigung" />;
+    return <ServicesDetailTemplate   slug="gebeaudreinigung" />;
   }

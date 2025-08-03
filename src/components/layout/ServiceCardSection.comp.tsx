@@ -8,11 +8,11 @@ import type { ServiceDataType } from "@/types/services.type";
 
 type props = {
     data: ServiceDataType[]
+    parentPath:string
 }
 
 
-export default function ServiceCardSection({ data }: props) {
-
+export default function ServiceCardSection({ data,parentPath }: props) {
 
     return <div className="grid md:grid-cols-2 gap-12">
 
@@ -40,7 +40,7 @@ export default function ServiceCardSection({ data }: props) {
 
                     <div className="mt-4 w-full flex justify-start sm:justify-center">
                         <Link
-                            href={`leistungen/${service.path}`}
+                            href={`/${[parentPath, service.path].filter(Boolean).join("/")}`}
                             className="w-full sm:w-auto px-4 py-2 bg-primary text-white rounded-md transition hover:bg-primary/90 text-center block"
                         >
                             Jetzt mehr erfahren

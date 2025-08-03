@@ -67,8 +67,7 @@ export default function ServicesDetailTemplate({ slug }: Props) {
       {/* Weitere Leistungen */}
       <section className="max-w-6xl mx-auto px-4 mt-20">
         <h3 className="text-2xl font-bold mb-6 text-center">Weitere Leistungen</h3>
-        <ServiceCardSection data={ServicesData.filter(s => s.path !== slug)} />
-       
+        <ServiceCardSection parentPath="leistungen" data={ServicesData.filter(s => s.path !== slug)} />
       </section>
     </main>
   );
