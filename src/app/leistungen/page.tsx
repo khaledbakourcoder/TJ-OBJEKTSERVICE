@@ -38,14 +38,14 @@ export const metadata = {
 
 export default function LeistungenPage() {
     return (
-        <main className="bg-white text-gray-800 pb-20 px-4 sm:px-6 md:px-10">
+        <main className="bg-white text-gray-800 pb-20  sm:px-6 md:px-10">
             {/* Hero Banner */}
             <div className="w-full relative h-[300px] md:h-[400px] mb-16">
                 <Image
                     src="/hero-bg-services.png"
                     alt="Dienstleistungen Banner"
                     fill
-                    className="object-cover object-center"
+                    className="object-cover object-center w-full"
                     priority
                 />
                 <div className="absolute inset-0 bg-black/40 flex items-center justify-center px-4">
@@ -56,7 +56,7 @@ export default function LeistungenPage() {
             </div>
 
             {/* Leistungen Section */}
-            <section className="max-w-6xl mx-auto space-y-16">
+            <section className="max-w-6xl mx-auto space-y-16 p-4">
                 <div className="text-center">
                     <h1 className="text-4xl font-bold mb-4">Unsere Leistungen</h1>
                 </div>
