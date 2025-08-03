@@ -72,7 +72,7 @@ export default function Header() {
               onClick={(e) => e.stopPropagation()} // verhindert, dass Klick auf Menü es schließt
             >
               {NavLinksData.map((link, i) => (
-                <li key={i}>
+                <li onClick={()=> setMenuOpen(false)} key={i}>
                   <NavItem href={link.path} label={link.label} />
                 </li>
               ))}
