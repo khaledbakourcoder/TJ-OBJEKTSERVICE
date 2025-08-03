@@ -25,7 +25,7 @@ export default function HeroSection() {
       {/* Inhalt */}
       <div className="relative z-10 max-w-4xl mx-auto">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
-        Für Menschen, die Qualität spüren wollen – Hausservice mit Verantwortung
+        Ihr Objekt in besten Händen – organisiert, sauber, verantwortungsvoll
         </h1>
         <p className="mt-5 text-base sm:text-lg md:text-xl text-white/90">
         Wir schaffen Sicherheit, Sauberkeit und Struktur – mit Leidenschaft für jedes Objekt
