@@ -3,7 +3,6 @@ import React from "react";
 import Image from "next/image";
 import { CheckCircle } from "lucide-react";
 
-import Link from "next/link";
 import type { ServiceDataType } from "@/types/services.type";
 import Button from "../UI/Button";
 
