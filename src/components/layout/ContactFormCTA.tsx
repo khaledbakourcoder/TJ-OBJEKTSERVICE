@@ -5,7 +5,7 @@ import React from 'react';
 import Link from 'next/link';
 import { Mail } from 'lucide-react';
 import NavLinksData from '@/data/navLinks.data';
-export default function KontaktFormCTA() {
+export default function ContactFormCTA() {
   return (
     <section className="bg-secondary/20 text-gray-800 py-20 px-4 sm:px-6 md:px-10 text-center">
       <div className="max-w-3xl mx-auto">

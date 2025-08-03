@@ -1,5 +1,5 @@
 
-import ServiceCards from './UI/ServiceCards';
+import ServiceCards from '../UI/ServiceCards';
 
 
 export default function ServiceSection() {

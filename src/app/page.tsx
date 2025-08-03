@@ -1,19 +1,18 @@
-import KontaktFormCTA from "@/components/KontaktFormCTA";
-import HeroSection from "@/components/Hero";
-import WarumWirSection from "@/components/Why";
-import { IntroTextLeistungen } from "@/components/IntroSection";
-import ServiceSection from "@/components/ServicesSection";
+import HeroSection from "@/components/layout/Hero";
+import { IntroTextLeistungen } from "@/components/layout/IntroSection";
+import ServiceSection from "@/components/layout/ServicesSection";
 import type { Metadata } from "next";
+import WaySection from "@/components/layout/WhySection";
+import ContactFormCTA from "@/components/layout/ContactFormCTA";
 
 export default function Home() {
   return (
    <main>
     <HeroSection />
     <IntroTextLeistungen />
-
     <ServiceSection />
-    <WarumWirSection />
-    <KontaktFormCTA />
+    <WaySection />
+    <ContactFormCTA/>
    </main>
   );
 }   

@@ -3,10 +3,10 @@
 
 import React from 'react';
 
-import FeaturesCards from './UI/FeaturesCards';
+import FeaturesCards from '../UI/FeaturesCards';
 
 
-export default function WarumWirSection() {
+export default function WaySection() {
     return (
         <section className="bg-gray-50 py-20 px-4 sm:px-6 md:px-10 text-center text-gray-800">
             <div className="max-w-6xl mx-auto">

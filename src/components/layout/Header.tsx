@@ -8,7 +8,7 @@ import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import NavLinksData from '@/data/navLinks.data';
-import NavItem from './NavItem';
+import NavItem from '../UI/NavItem';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
