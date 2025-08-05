@@ -28,6 +28,17 @@ export type ServiceDataType = {
     text_color:string
     hover_bg:string
   },
+  meta:{
+    title:string,
+    description:string
+  } ,
+  callAction:{
+    first:string,
+    second:{
+      title:string,
+      subtitle:string
+    }
+  },
   Image: {
     path: string;
     alt: string;

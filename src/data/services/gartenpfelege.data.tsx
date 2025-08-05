@@ -2,7 +2,7 @@ import { Leaf } from "lucide-react";
 import type { ServiceDataType } from "@/types/services.type";
 
 const GartenpflegeData: ServiceDataType = {
-  icon: <Leaf className="w-10 h-10 mx-auto text-green-600" />,
+  icon: <Leaf className="w-10 h-10 mx-auto text-green-700" />,
   title: "Gartenpflege",
   text: "Rasen, Hecken, Wege – gepflegte Außenanlagen vom Fach.",
   bg: "bg-[#f3fbe6]",
@@ -21,7 +21,10 @@ const GartenpflegeData: ServiceDataType = {
     imagePath: "/gartenpfelege-image.png",
     overlayColor: "bg-black/50",
   },
-
+  meta: {
+    title: "Gartenpflege – Außenanlagenservice Flensburg | TJ Objekt Services",
+    description: "Professionelle Gartenpflege in Flensburg: Rasen mähen, Heckenschnitt, Unkrautentfernung & Pflege von Außenanlagen."
+  },
   sections: [
     {
       heading: "Individuelle Gartenpflege für jede Jahreszeit",
@@ -52,6 +55,16 @@ const GartenpflegeData: ServiceDataType = {
         "Von Laubbeseitigung bis Beetpflege – wir kümmern uns ganzjährig um Ihre Grünflächen, Wege und Pflanzbereiche.",
     },
   ],
+
+  callAction: {
+    first: "Jetzt Gartenpflege starten – ganz ohne Aufwand",
+    second: {
+      title: "Ein gepflegter Garten, ganz ohne Stress",
+      subtitle: "Lehnen Sie sich zurück – wir bringen Ihre Außenanlage auf Vordermann. Schnell, gründlich und saisonal passend.",
+    }
+  }
+  
+  
 };
 
 export default GartenpflegeData;

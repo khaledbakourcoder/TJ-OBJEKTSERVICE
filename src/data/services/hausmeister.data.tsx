@@ -2,7 +2,7 @@ import { Wrench } from 'lucide-react';
 import type { ServiceDataType } from '@/types/services.type';
 
 const HausmeisterData: ServiceDataType = {
-  icon: <Wrench className="w-10 h-10 mx-auto text-yellow-500" />,
+  icon: <Wrench className="w-10 h-10 mx-auto text-yellow-700" />,
   title: 'Hausmeisterdienste',
   text: 'Kleine Reparaturen, Objektkontrollen und technischer Service.',
   bg: 'bg-[#fff8e6]',
@@ -22,7 +22,10 @@ const HausmeisterData: ServiceDataType = {
     imagePath: "/Hausmeister-image.png",
     overlayColor: "bg-black/50",
   },
-
+  meta: {
+    title: "Hausmeisterservice – Betreuung von Objekten in Flensburg | TJ Objekt Services",
+    description: "Hausmeisterdienste für Ihre Immobilie: Reparaturen, Wartung, Kontrolle und Betreuung – alles aus einer Hand."
+  },
   sections: [
     {
       heading: "Zuverlässige Betreuung für Ihre Immobilie",
@@ -53,6 +56,16 @@ const HausmeisterData: ServiceDataType = {
         "Unterstützung bei der Bedienung, Überwachung und Koordination von Heizungs-, Lüftungs- und Sicherheitstechnik.",
     },
   ],
+  callAction: {
+    first: "Jetzt Hausmeister mit Elektro-Know-how sichern",
+    second: {
+      title: "Mehr als nur ein Hausmeister",
+      subtitle: "Unser Profi kümmert sich nicht nur um Reparaturen und Pflege – als Fach-Elektriker löst er auch technische Probleme direkt vor Ort. Ohne Wartezeit. Ohne zusätzliche Handwerker.",
+    }
+    
+  }
+  
+  
 };
 
 export default HausmeisterData;

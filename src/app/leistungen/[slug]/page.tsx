@@ -2,29 +2,33 @@ import ServicesDetailTemplate from "@/components/Templates/ServicesDetailTemplat
 import services from "@/data/services.data";
 import { notFound } from "next/navigation";
 
-// ⛔ KEIN async hier!
-export const dynamic = "force-static"; // oder "force-dynamic" zum Testen
+type Props = {
+  params: {
+    slug: string;
+  };
+};
 
 export async function generateStaticParams() {
-  return services.map((service) => ({
-    slug: service.path,
-  }));
+  return services.map((s) => ({ slug: s.path }));
 }
 
-export async function generateMetadata({ params }: { params: { slug: string } }) {
+export async function generateMetadata({ params }: Props) {
   const service = services.find((s) => s.path === params.slug);
 
   if (!service) {
-    return { title: "Nicht gefunden" };
+    return {
+      title: "Nicht gefunden | TJ Objekt Services",
+      description: "Diese Seite existiert leider nicht.",
+    };
   }
 
   return {
-    title: `${service.title} – Flensburg | TJ Objekt Services`,
-    description: `Mehr über unseren Service ${service.title} erfahren.`,
+    title: service.meta?.title || `${service.title} – Flensburg | TJ Objekt Services`,
+    description: service.meta?.description || `Erfahren Sie mehr über unseren Service ${service.title}.`,
   };
 }
 
-export default function ServiceDetailPage({ params }: { params: { slug: string } }) {
+export default async function ServiceDetailPage({ params }: Props) {
   const slug = params.slug;
   const service = services.find((s) => s.path === slug);
 

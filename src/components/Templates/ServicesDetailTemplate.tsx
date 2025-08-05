@@ -1,7 +1,10 @@
 import Image from "next/image";
-import { CheckCircle } from "lucide-react";
 import ServicesData from "@/data/services.data";
 import ServiceCardSection from "../layout/ServiceCardSection.comp";
+import CheckItem from "../UI/CheckItem"
+import ContactFormCTA from "../layout/ContactFormCTA"
+import Button from "../UI/Button"
+import NavLinksData from "@/data/navLinks.data";
 
 interface Props {
   slug: string;
@@ -48,27 +51,38 @@ export default function ServicesDetailTemplate({ slug }: Props) {
         </section>
       ))}
 
+
+        <Button
+          className={`${currentService.button.bg} 
+        ${currentService.button.hover_bg} 
+        ${currentService.button.text_color} 
+      
+        mx-4 `}
+          path={NavLinksData[NavLinksData.length-1].path}
+          icon={currentService.icon}
+        >
+          {currentService.callAction.first}
+        </Button>
+
+
       {/* Leistungsübersicht */}
-      <section className={`max-w-3xl mx-auto px-4 py-12 mt-6 rounded-md ${currentService.bg}`}> 
+      <section className={`max-w-3xl mx-auto px-4 py-12 mt-6 rounded-md mb-10 ${currentService.bg}`}>
         <h3 className="text-xl font-semibold mb-4 text-gray-900">Unsere Leistungen im Detail:</h3>
         <ul className="list-none space-y-6 text-gray-700 text-base leading-relaxed">
           {currentService.service_Overview.map((point, i) => (
-            <li key={i} className="flex items-start gap-3">
-              <CheckCircle className="text-green-600 mt-1 flex-shrink-0" size={20} />
-              <div>
-                <p className="font-semibold text-gray-900 mb-1">{point.title}</p>
-                <p className="text-sm text-gray-700">{point.description}</p>
-              </div>
-            </li>
+            <CheckItem key={i} title={point.title} description={point.description} />
           ))}
         </ul>
       </section>
+      <ContactFormCTA title={currentService.callAction.second.title} subtitle={currentService.callAction.second.subtitle} />
 
       {/* Weitere Leistungen */}
       <section className="max-w-6xl mx-auto px-4 mt-20">
         <h3 className="text-2xl font-bold mb-6 text-center">Weitere Leistungen</h3>
         <ServiceCardSection parentPath="leistungen" data={ServicesData.filter(s => s.path !== slug)} />
       </section>
+
+
     </main>
   );
 }

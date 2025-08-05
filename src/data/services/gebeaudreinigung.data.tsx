@@ -2,7 +2,7 @@ import { BoomBox } from 'lucide-react';
 import type { ServiceDataType } from '@/types/services.type';
 
 const GebaeudereinigungData: ServiceDataType = {
-  icon: <BoomBox className="w-10 h-10 mx-auto text-blue-500" />,
+  icon: <BoomBox className="w-10 h-10 mx-auto text-blue-700" />,
   title: 'Gebäudereinigung',
   text: 'Gründliche Reinigung für Treppenhäuser, Büros, Fenster & mehr.',
   bg: 'bg-[#e6f4ff]',
@@ -20,6 +20,10 @@ const GebaeudereinigungData: ServiceDataType = {
     subtitle: "Sauberkeit, die Eindruck hinterlässt – innen wie außen",
     imagePath: "/gebäudreinigung-image.png",
     overlayColor: "bg-black/50",
+  },
+  meta: {
+    title: "Gebäudereinigung – Flensburg & Umgebung | TJ Objekt Services",
+    description: "Zuverlässige Gebäudereinigung für Treppenhäuser, Büros, Fenster und mehr – professionell & diskret."
   },
 
   sections: [
@@ -52,6 +56,15 @@ const GebaeudereinigungData: ServiceDataType = {
         "Reinigungsdienste nach Umbauten, Renovierungen oder Mieterwechsel – inklusive Grund- und Bauendreinigung.",
     },
   ],
+  callAction: {
+    first: "Jetzt kostenloses Reinigungsangebot erhalten",
+    second: {
+      title: "Glänzende Räume. Zufriedene Kunden.",
+      subtitle: "Fordern Sie jetzt Ihr unverbindliches Angebot an und überzeugen Sie sich von unserer makellosen Reinigung.",
+    }
+  }
+  
+  
 };
 
 export default GebaeudereinigungData;

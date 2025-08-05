@@ -2,7 +2,7 @@ import { Snowflake } from 'lucide-react';
 import type { ServiceDataType } from '@/types/services.type';
 
 const WinterdienstData: ServiceDataType = {
-    icon: <Snowflake className="w-10 h-10 mx-auto text-cyan-500" />,
+    icon: <Snowflake className="w-10 h-10 mx-auto text-cyan-700" />,
     title: 'Winterdienst',
     text: 'Zuverlässiges Schneeräumen und Streuen für sichere Wege.',
     bg: 'bg-[#e6faff]',
@@ -22,7 +22,10 @@ const WinterdienstData: ServiceDataType = {
         imagePath: "/winterdienst-image.png",
         overlayColor: "bg-black/50",
     },
-
+    meta: {
+        title: "Winterdienst – Schnee- & Eisbeseitigung in Flensburg | TJ Objekt Services",
+        description: "Sicher durch den Winter mit unserem professionellen Winterdienst: Schneeräumen, Streuen & Eisbeseitigung."
+      },
     sections: [
         {
             heading: "Schnell & zuverlässig bei Schnee und Eis",
@@ -53,6 +56,15 @@ const WinterdienstData: ServiceDataType = {
                 "Unser Team steht im Winter rund um die Uhr bereit – auch bei Nacht oder am Wochenende – damit Ihre Immobilie sicher bleibt.",
         },
     ],
+    callAction: {
+        first: "Sichern Sie sich jetzt den Winterdienst – bevor’s glatt wird",
+        second: {
+          title: "Rutschfrei durch den Winter",
+          subtitle: "Wir räumen Schnee und streuen pünktlich – verlassen Sie sich auf uns bei Eis und Schnee.",
+        }
+      }
+      
+      
 };
 
 export default WinterdienstData;

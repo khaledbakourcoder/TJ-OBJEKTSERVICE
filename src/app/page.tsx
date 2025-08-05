@@ -12,7 +12,7 @@ export default function Home() {
     <IntroTextLeistungen />
     <ServiceSection />
     <WaySection />
-    <ContactFormCTA/>
+    <ContactFormCTA subtitle="Nutzen Sie unser Kontaktformular – wir antworten schnell und zuverlässig." title="Bereit für professionelle Unterstützung?"/>
    </main>
   );
 }   
